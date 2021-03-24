@@ -1,0 +1,132 @@
+// main:../style.less
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// .container {
+//     margin: 0 auto;
+//     max-width: 1170px;
+// }
+
+.skills {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__inner--left,
+    &__inner--right {
+
+        width: 550px;
+        font-size: 130px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__inner--left {
+        animation: backInLeft;
+        animation-duration: 2s;
+    }
+
+    &__inner--right {
+        animation: backInRight;
+        animation-duration: 2s;
+    }
+
+    &__html {
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    &__text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 60px;
+        animation-name: backInDown;
+        animation-duration: 2s;
+        margin-top: 30px;
+        
+    }
+
+    &__project {
+        padding-top: 25px;
+
+    }
+
+    &__css {
+        cursor: pointer;
+    }
+
+    &__js {
+        cursor: pointer;
+    }
+
+    &__sass {
+        cursor: pointer;
+    }
+
+    &__gulp {
+        cursor: pointer;
+    }
+
+    &__git {
+        cursor: pointer;
+    }
+
+    &__item {
+        width: 500px;
+        height: 300px;
+    }
+
+    &__item img {
+        width: 600px;
+        height: 300px;
+    }
+
+    &__slider {
+        display: flex;
+    }
+}
+
+.slick-arrow {
+    background-color: none;
+    border: none;
+    font-size: 0;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

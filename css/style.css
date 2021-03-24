@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.skills {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skills__inner--left,
+.skills__inner--right {
+  width: 550px;
+  font-size: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills__inner--left {
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+.skills__inner--right {
+  animation: backInRight;
+  animation-duration: 2s;
+}
+.skills__html {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.skills__html:hover {
+  color: red;
+}
+.skills__text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 60px;
+  animation-name: backInDown;
+  animation-duration: 2s;
+  margin-top: 30px;
+}
+.skills__project {
+  padding-top: 25px;
+}
+.skills__css {
+  cursor: pointer;
+}
+.skills__js {
+  cursor: pointer;
+}
+.skills__sass {
+  cursor: pointer;
+}
+.skills__gulp {
+  cursor: pointer;
+}
+.skills__git {
+  cursor: pointer;
+}
+.skills__item {
+  width: 500px;
+  height: 300px;
+}
+.skills__item img {
+  width: 600px;
+  height: 300px;
+}
+.skills__slider {
+  display: flex;
+}
+.slick-arrow {
+  background-color: none;
+  border: none;
+  font-size: 0;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
